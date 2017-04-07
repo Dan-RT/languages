@@ -1,0 +1,24 @@
+
+.form_section {
+    background-color: #a9cce3;
+    /*border: 2px solid black;
+    border-radius: 6px;*/
+    line-height: 40px;
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    margin-top: 18vh;
+    margin-bottom: 28vh;
+}
+
+h3 {
+    margin-bottom: 5vh;
+}
+
+.submit_button {
+    margin-left: 2vw;
+}
+
+#theme_choice {
+    margin-right: 2vw;
+}

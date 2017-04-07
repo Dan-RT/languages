@@ -1,0 +1,25 @@
+
+
+
+
+footer {
+	background-color: #969696;
+	color: white;
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+}
+
+footer ul {
+	margin-bottom: 0vh;
+	margin-left: 25vw;
+}
+
+.footer_list li {
+	display : inline;
+	margin-right: 3vw;
+}
+
+.tab {
+	margin-left: 2vw;
+	display: inline;
+}

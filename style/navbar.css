@@ -1,0 +1,26 @@
+/*
+.btn {
+	background-color: white;
+  	color: black;
+}
+*/
+.navbar-fixed-top {
+	background-color: #2980b9;
+}
+
+.nav {
+	font-size: large;
+}
+
+.logo_site {
+	font-size: x-large;
+	margin-left: 6vw;
+}
+
+.first_element_nav {
+	margin-left: 35vw;
+}
+
+nav li a {
+	color: white;
+}

@@ -1,0 +1,40 @@
+/*
+[class*="col-"] {
+    background-color: lightgreen;
+    border: 2px solid black;
+    border-radius: 6px;
+    line-height: 40px;
+}
+*/
+
+body {
+    font-size: large;
+}
+
+
+.form_section {
+    /*padding-top: 8vh;
+    padding-bottom: 8vh;*/
+    background-color: #a9cce3;
+    margin-top: 18vh;
+    text-align: center;
+    margin-bottom: 24vh;
+}
+
+.title {
+    margin-top:3vh;
+}
+
+.type {
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+}
+
+.theme {
+    margin-bottom: 3vh;
+}
+
+.submit_style {
+    margin-bottom: 3vh;
+}
+
