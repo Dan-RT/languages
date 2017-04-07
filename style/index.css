@@ -11,14 +11,24 @@ body {
     font-size: large;
 }
 
+/*footer {
+    margin-top: 12vh;
+}*/
 
 .form_section {
     /*padding-top: 8vh;
     padding-bottom: 8vh;*/
+    padding-bottom: 4vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
     background-color: #a9cce3;
     margin-top: 18vh;
     text-align: center;
     margin-bottom: 24vh;
+}
+
+#submit_button {
+    margin-top: 4vh;
 }
 
 .title {

@@ -12,51 +12,162 @@
 
 	<body>
 
-		<?php include("navbar.php"); ?>
-		<div class="container-fullwidth">
+		<?php include("php/navbar_index.php"); ?>
+
+
+
+		<div class="container-fullwidth container-fluid">
 			<div class="row">
-				<div class="col-lg-offset-4 col-sm-4 form_section">
+				<div class="col-lg-offset-4 col-sm-4">
+					<form class="form_section" action="php/studying.php" method="POST">
 
-					<form  action="form_first_choice.php" method="POST">
-						<div class="row title">
-							<div class="col-sm-12">
-								<h3>Choose your method :</h3>
+						<div class="row" id="First_form" >
+							<div class="row title">
+								<div class="col-sm-12">
+									<h3>Choose your method :</h3>
+								</div>
 							</div>
+
+							<div class="radio">
+								<div class="row type">
+									<div class="col-lg-offset-1 col-sm-6">
+										<label for="radio_type">By type</label>
+									</div>
+									<div class="col-sm-3">
+										<input id="radio_type" type="radio" name="first_choice" value="1">
+									</div>
+
+								</div>
+
+								<div class="row theme">
+									<div class="col-lg-offset-1 col-sm-6">
+										<label for="radio_theme">By theme</label>
+									</div>
+									<div class="col-sm-3">
+										<input id="radio_theme"  type="radio" name="first_choice" value="2">
+										<!-- Si jamais pour faire remarcher les liens, mettre name à "radio" -->
+									</div>
+								</div>
+
+							</div>
+
+							<!-- <button id="First_form_button" type="submit" class="btn btn-md btn-default submit_style"  value="Enter">
+                                <span class="glyphicon glyphicon-ok"></span> Submit
+                            </button>-->
 						</div>
 
-						<div class="radio">
-							<div class="row type">
-								<div class="col-lg-offset-1 col-sm-6">
-									<label for="type">By type</label>
-								</div>
-								<div class="col-sm-3">
-									<input id="type" type="radio" name="radio" value="type">
-								</div>
-							</div>
+						<div class="row" id="Type_form">
+							<h3>Choose the type :</h3>
+							<select name="type" id="type_choice">
+								<option value="verb">Verbs</option>
+								<option value="noun">Nouns</option>
+								<option value="adjective">Adjectives</option>
+								<option value="preposition">Prepositions</option>
+							</select>
 
-							<div class="row theme">
-								<div class="col-lg-offset-1 col-sm-6">
-									<label for="theme">By theme</label>
-								</div>
-								<div class="col-sm-3">
-									<input id="theme" type="radio" name="radio" value="theme">
-								</div>
-							</div>
 
 						</div>
 
-						<button type="submit" class="btn btn-md btn-default submit_style" value="Enter">
+						<div class="row" id="Theme_form">
+							<h3>Choose the theme :</h3>
+							<select name="theme" id="theme_choice">
+								<option value="common">Common</option>
+								<option value="family">Family</option>
+								<option value="childhood">Childhood</option>
+								<option value="food">Food (meals, fruits, vegetables, meat, drinks)</option>
+								<option value="house">House</option>
+								<option value="feelings">Feelings</option>
+								<option value="violence">Violence</option>
+								<option value="sport">Sport</option>
+								<option value="medical">Medical(medical, disease, medicines)</option>
+								<option value="body">Body (bones and muscles, organs, face)</option>
+								<option value="personality">Personality</option>
+								<option value="physical">Physical</option>
+								<option value="clothes">Clothes</option>
+								<option value="shape">Shapes</option>
+								<option value="religion">Religion</option>
+								<option value="city">City (city, electricity)</option>
+								<option value="school">School</option>
+								<option value="work">Work</option>
+								<option value="job">Jobs</option>
+								<option value="qualities">Qualities</option>
+								<option value="taste">Tastes </option>
+								<option value="quantities">Quantities</option>
+								<option value="position">Position</option>
+								<option value="temporal">Temporal</option>
+								<option value="variation">Variation</option>
+								<option value="animals">Animals</option>
+								<option value="other">Other</option>
+							</select>
+						</div>
+
+						<button id="submit_button" type="submit" class="btn btn-md btn-default submit_button" value="Enter">
 							<span class="glyphicon glyphicon-ok"></span> Submit
 						</button>
-
 					</form>
+
 				</div>
 			</div>
 		</div>
 
-		<?php include("footer.php"); ?>
+
+
+		<?php include("php/footer_index.php"); ?>
+
+
+		<script src="js/lib/jquery.min.js"></script>
+		<script src="js/index.js"></script>
 
 	</body>
+
 </html>
 
 
+
+
+
+
+<!--
+
+    <section>
+
+        <p>Que pensez-vous de la navigation du site?</p>
+
+        <div>
+
+            <label class="label_radio" for="navigation_super">
+                <input id="navigation_super" type="radio" name="navigation" value="1" />
+                Super
+            </label>
+
+        </div>
+
+        <div>
+
+            <label class="label_radio" for="navigation_mieux">
+                <input id="navigation_mieux" type="radio" name="navigation" value="2"/>
+                Y'a mieux
+            </label>
+
+        </div>
+
+        <div>
+
+            <label class="label_radio" for="navigation_perdu">
+                <input id="navigation_perdu" type="radio" name="navigation" value="3" />
+                Je me suis perdu
+            </label>
+
+        </div>
+
+        <div>
+
+            <label class="label_radio" for="navigation_nulle">
+                <input id="navigation_nulle" type="radio" name="navigation" value="4"/>
+                Nulle
+            </label>
+
+        </div>
+
+    </section>
+-->
