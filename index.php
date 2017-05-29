@@ -12,7 +12,38 @@
 
 	<body>
 
-		<?php include("php/navbar_index.php"); ?>
+		<?php
+
+		include("php/navbar_index.php");
+		require ("php/word.php");
+		require ("php/word_manager.php");
+
+		/*$data = ([
+			"french" => "french",
+			"english" => "english",
+			"spanish" => "spanish",
+			"polish" => "polish",
+			"type_word" => "verb",
+			"theme" => "theme",
+			"main_theme" => "main_theme",
+			"extra_theme" => "extra_theme",
+			"variante_esp_1" => "variante_esp_1",
+			"variante_esp_2" => "variante_esp_2",
+			"variante_esp_3" => "variante_esp_3"
+		]);*/
+
+		$data = ([
+			"id" => 719
+		]);
+
+		$word_m = new word_manager();
+		$tmp_word = new word($data);
+
+		$word_m->delete($tmp_word);
+
+
+
+		?>
 
 
 
@@ -64,7 +95,6 @@
 								<option value="adjective">Adjectives</option>
 								<option value="preposition">Prepositions</option>
 							</select>
-
 
 						</div>
 
